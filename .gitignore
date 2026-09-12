@@ -18,11 +18,13 @@ build/
 *.docx
 *.pdf
 *.tex
+*.pptx
 PAPER*
 paper*
 Paper*
 old/
 build_paper_docx.py
+build_presentation.py
 extracted_original_paper.txt
 quantumsemantic_chunking.md
 
