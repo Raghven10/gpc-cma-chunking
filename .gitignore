@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Papers, Manuscripts, Drafts, and Editorial Notes
+*.docx
+*.pdf
+*.tex
+PAPER*
+paper*
+Paper*
+old/
+build_paper_docx.py
+extracted_original_paper.txt
+quantumsemantic_chunking.md
+
+# Large raw archives (raw json caches are kept or regenerated)
+experiments/data/*.tgz
+experiments/data/*.tar.gz

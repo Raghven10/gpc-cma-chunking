@@ -1,0 +1,7 @@
+Parameter Category,Specification
+Corpora & Splits,"Qasper dev split (50 scientific papers, 151 annotated QA queries); Curated Wikipedia articles (6 multi-section encyclopedic documents)"
+Partitioning Strategies,"GoldSection, Fixed-128, Fixed-256, Fixed-512 (10% stride overlap), Recursive-256, Semantic-75 (75th percentile cosine distance), RandomMatched, ShuffledNull"
+Evaluator Models,"Dense Evaluator: sentence-transformers/all-MiniLM-L6-v2 (384-dim); Sparse: BM25Okapi (k1=1.5, b=0.75)"
+Metric Hyperparameters,ISD variance penalty alpha = 0.5; GPC density weight beta = 0.6; Harmonic smoothing eps = 1e-6; CMA PCA rank k = 10 (centered)
+Retrieval Budget,"Matched token budgets B in {256, 512, 1024} tokens; Primary evaluation at B = 512 tokens"
+Statistical Testing,"Paired t-tests, Wilcoxon signed-rank tests, Cohen's d effect sizes, 1000-sample bootstrap 95% confidence intervals, Repeated-measures Pearson & Spearman correlation"
